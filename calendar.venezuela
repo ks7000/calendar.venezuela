@@ -1,0 +1,48 @@
+/*
+ * Fechas relevantes de la República Bolivariana de Venezuela.
+ * Realizado por Jimmy Olano <olano@ks7000.net.ve> 21 abril 2017.
+ *
+ * Esta(s) obra(s) está(n) bajo una
+ * Licencia Creative Commons Atribución-CompartirIgual 3.0 Venezuela:
+ * http://creativecommons.org/licenses/by-sa/3.0/ve/
+ *
+ */
+
+#ifndef _calendar_venezuela_
+#define _calendar_venezuela_
+
+LANG=utf-8
+
+/* Feriados nacionales */
+jan 01	Año nuevo en Venezuela.
+jan 15	Día del educador en Venezuela.
+may 01	Día del Trabajador y la Trabajadora en Venezuela.
+oct 12	Día de la Resistencia Indígena en Venezuela.
+dec 24	Nochebuena.
+dec 31	Noche vieja.
+
+/* Feriados religiosos */
+jan 06	Día de la llegada de los Santos Reyes Magos para adorar a Jesús (Venezuela).
+mar 19	Día de San José en Venezuela.
+may 25	Ascensión del Señor en Venezuela.
+jun 15	"Corpus Christi" en Venezuela.
+jun 29	Día de San Pedro y San Pablo en Venezuela.
+jul 05	Día de la Firma del Acta de Independencia en Venezuela.
+sep 11	Día de la Virgen de Coromoto, Patrona de Venezuela.
+nov 01	Día de Todos Los Santos en Venezuela.
+dec 08	Día de la Inmaculada Concepción en Venezuela.
+dec 25	Día de la Natividad de Nuestro señor Jesucristo.
+
+/* Feriados de la Patria */
+apr 19	Movimiento Precursor de la Independencia en Venezuela (año 1810).
+jun 24	Batalla de Carabobo en Venezuela (año 1821).
+jul 24	Natalicio de El Libertador Simón José Antonio de la Santísima Trinidad 
+	Bolívar y Palacios (Caracas, Venezuela, 1783).
+
+/* Conmemoraciones de la Patria */
+feb 27	"Caracazo", insurrección popular contra el capitalismo salvaje neoliberal.
+mar 05	Siembra de nuestro Presidente de la República Hugo Rafael 
+	Chávez Frías (Caracas, 2013).
+dec 17	Siembra de nuestro Libertador Simón Bolívar (Santa Marta, 1830).
+
+#endif /* !_calendar_venezuela_ */
