@@ -19,70 +19,70 @@ a otra subcarpeta que tiene **_otro_ fichero calendar.all** que describe otros s
 Aunque no es oficial esta  estructura jerárquica que presentamos a continuación, es nuestra ma-
 nera de representar rápida y fácilmente la manera de trabajar de **calendar**:
 
-------------------------
-~/.calendar/            | 1° en ser leído y ejecutado
-   /etc/calendar/       | 2° si no existe 1° entonces lee y ejecuta esta carpeta.
-    /usr/share/calendar/| 3° por último,de no conseguir ni 1° ni 2° lee y ejecuta esta carpeta
-------------------------+/calendar.all
-                                  |-calendar.world
-                                  |-calendar.argentina
-                                  |-calendar.australia
-                                  |-calendar.belgium
-                                  |-calendar.birthday
-                                  |-calendar.christian
-                                  |-calendar.computer
-                                  |-calendar.croatian
-                                  |         |-hr_HR/calendar.all
-                                  |                         |-hr_HR/calendar.praznici
-                                  |-calendar.debian
-                                  |-calendar.discordian
-                                  |-calendar.dutch
-                                  |-calendar.eu
-                                  |-calendar.freebsd
-                                  |-calendar.french
-                                  |         |-fr_FR/calendar.all
-                                  |                         |-fr_FR/calendar.jferies
-                                  |                         |-fr_FR/calendar.fetes
-                                  |                         |-fr_FR/calendar.proverbes
-                                  |-calendar.german
-                                  |         |-de_DE/calendar.all
-                                  |                         |-de_DE/calendar.kirche
-                                  |                         |-de_DE/calendar.wissenschaft
-                                  |                         |-de_DE/calendar.feiertag
-                                  |                         |-de_DE/calendar.literatur
-                                  |                         |-de_DE/calendar.geschichte
-                                  |                         |-de_DE/calendar.musik
-                                  |-calendar.history
-                                  |-calendar.holiday
-                                  |-calendar.hungarian
-                                  |         |-hu_HU/calendar.all
-                                  |                         |-hu_HU/calendar.nevnapok
-                                  |                         |-hu_HU/calendar.unnepek
-                                  |-calendar.judaic
-                                  |-calendar.kazakhstan
-                                  |-calendar.lotr
-                                  |-calendar.music
-                                  |-calendar.newzealand
-                                  |-calendar.pagan
-                                  |-calendar.russian
-                                  |         |-ru_RU/calendar.all
-                                  |                         |-ru_RU/calendar.holiday
-                                  |                         |-ru_RU/calendar.msk
-                                  |                         |-ru_RU/calendar.pagan
-                                  |                         |-ru_RU/calendar.common
-                                  |                         |-ru_RU/calendar.military
-                                  |                         |-ru_RU/calendar.orthodox
-                                  |-calendar.southafrica
-                                  |-calendar.thai
-                                  |-calendar.ubuntu
-                                  |-calendar.ukrainian
-                                  |         |-uk_UA/calendar.all
-                                  |                         |-uk_UA/calendar.holiday
-                                  |                         |-uk_UA/calendar.misc
-                                  |                         |-uk_UA/calendar.othodox
-                                  |-calendar.unitedkingdom
-                                  |-calendar.usholiday
-                                  |-_calendar.venezuela- (nuestra propuesta)_
+	------------------------
+	~/.calendar/            | 1° en ser leído y ejecutado
+	   /etc/calendar/       | 2° si no existe 1° entonces lee y ejecuta esta carpeta.
+	    /usr/share/calendar/| 3° por último,de no conseguir ni 1° ni 2° lee y ejecuta esta carpeta
+	------------------------+/calendar.all
+	                                  |-calendar.world
+	                                  |-calendar.argentina
+	                                  |-calendar.australia
+	                                  |-calendar.belgium
+	                                  |-calendar.birthday
+	                                  |-calendar.christian
+	                                  |-calendar.computer
+	                                  |-calendar.croatian
+	                                  |         |-hr_HR/calendar.all
+	                                  |                         |-hr_HR/calendar.praznici
+	                                  |-calendar.debian
+	                                  |-calendar.discordian
+        	                          |-calendar.dutch
+	                                  |-calendar.eu
+	                                  |-calendar.freebsd
+	                                  |-calendar.french
+	                                  |         |-fr_FR/calendar.all
+	                                  |                         |-fr_FR/calendar.jferies
+	                                  |                         |-fr_FR/calendar.fetes
+	                                  |                         |-fr_FR/calendar.proverbes
+	                                  |-calendar.german
+	                                  |         |-de_DE/calendar.all
+	                                  |                         |-de_DE/calendar.kirche
+	                                  |                         |-de_DE/calendar.wissenschaft
+        	                          |                         |-de_DE/calendar.feiertag
+	                                  |                         |-de_DE/calendar.literatur
+	                                  |                         |-de_DE/calendar.geschichte
+	                                  |                         |-de_DE/calendar.musik
+	                                  |-calendar.history
+	                                  |-calendar.holiday
+	                                  |-calendar.hungarian
+	                                  |         |-hu_HU/calendar.all
+	                                  |                         |-hu_HU/calendar.nevnapok
+	                                  |                         |-hu_HU/calendar.unnepek
+	                                  |-calendar.judaic
+	                                  |-calendar.kazakhstan
+	                                  |-calendar.lotr
+        	                          |-calendar.music
+	                                  |-calendar.newzealand
+	                                  |-calendar.pagan
+	                                  |-calendar.russian
+        	                          |         |-ru_RU/calendar.all
+	                                  |                         |-ru_RU/calendar.holiday
+	                                  |                         |-ru_RU/calendar.msk
+	                                  |                         |-ru_RU/calendar.pagan
+	                                  |                         |-ru_RU/calendar.common
+	                                  |                         |-ru_RU/calendar.military
+	                                  |                         |-ru_RU/calendar.orthodox
+	                                  |-calendar.southafrica
+	                                  |-calendar.thai
+	                                  |-calendar.ubuntu
+	                                  |-calendar.ukrainian
+	                                  |         |-uk_UA/calendar.all
+	                                  |                         |-uk_UA/calendar.holiday
+	                                  |                         |-uk_UA/calendar.misc
+	                                  |                         |-uk_UA/calendar.othodox
+	                                  |-calendar.unitedkingdom
+	                                  |-calendar.usholiday
+	                                  |-_calendar.venezuela- (nuestra propuesta)_
 
 ## Instrucciones de instalación a nivel de usuario.
 
