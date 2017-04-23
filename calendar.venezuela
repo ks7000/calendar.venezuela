@@ -15,11 +15,11 @@ LANG=utf-8
 
 /* Feriados nacionales */
 jan 01	Año nuevo en Venezuela.
-jan 15	Día del educador en Venezuela.
+jan 15	Día del Educador en Venezuela.
 may 01	Día del Trabajador y la Trabajadora en Venezuela.
 oct 12	Día de la Resistencia Indígena en Venezuela.
 dec 24	Nochebuena.
-dec 31	Noche vieja.
+dec 31	Noche Vieja.
 
 /* Feriados religiosos */
 jan 06	Día de la llegada de los Santos Reyes Magos para adorar a Jesús (Venezuela).
