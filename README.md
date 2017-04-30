@@ -2,22 +2,15 @@
 
 Recordatorio de fechas relevantes para los habitantes de la República Bolivariana de Venezuela.
 
-Obra compatible con el formato de recordatorios del comando **calendar** incluido en el paquete
-**bsdmainutils** que se distribuye con GNU/Linux Ubuntu (a su vez derivado de Debian distro).
+Obra compatible con el formato de recordatorios del comando **calendar** incluido en el paquete **bsdmainutils** que se distribuye con GNU/Linux Ubuntu (el cual a su vez es derivado de Debian distro).
 
 ## Breve descripción sobre cómo "calendar" lee los ficheros de recordatorios.
 
-El comando "calendar" obtiene  todos sus  datos de la carpeta **/usr/share/calendar/** donde se
-encuentra alojado el ficehro **calendar.all** el cual contiene un listado de los demás ficheros
-con recordatorios con la nomenclatura **calendar.extension** donde _extension_ describe el con-
-tenido temático.
+El comando "calendar" obtiene  todos sus  datos de la carpeta **/usr/share/calendar/** donde se encuentra alojado el fichero **calendar.all** el cual contiene un listado de los demás ficheros con recordatorios con la nomenclatura **calendar.extension** donde _extension_ describe el contenido temático.
 
-En todo caso el fichero **calendar.all** es  clave y dependiendo  donde esté ubicado primero se
-lee y ejecuta. A su vez dentro de cada fichero **calendar.extension** se puede hacer referencia
-a otra subcarpeta que tiene **_otro_ fichero calendar.all** que describe otros subficheros.
+En todo caso el fichero **calendar.all** es  clave y dependiendo  donde esté ubicado primero se lee y ejecuta. A su vez dentro de cada fichero **calendar.extension** se puede hacer referencia a otra subcarpeta que tiene **_otro_ fichero calendar.all** que describe otros subficheros.
 
-Aunque no es oficial esta  estructura jerárquica que presentamos a continuación, es nuestra ma-
-nera de representar rápida y fácilmente la manera de trabajar de **calendar**:
+Aunque no es oficial esta  estructura jerárquica que presentamos a continuación, es nuestra manera de representar rápida y fácilmente la manera de trabajar de **calendar**:
 
 	------------------------
 	~/.calendar/            | 1° en ser leído y ejecutado
@@ -82,19 +75,20 @@ nera de representar rápida y fácilmente la manera de trabajar de **calendar**:
 	                                  |                         |-uk_UA/calendar.othodox
 	                                  |-calendar.unitedkingdom
 	                                  |-calendar.usholiday
-	                                  |-_calendar.venezuela- (nuestra propuesta)_
+   	                                  |-------------------------------------------+
+	                                  |- calendar.venezuela- (nuestra propuesta)  |
+   	                                  |-------------------------------------------+
 
 ## Instrucciones de instalación a nivel de usuario.
 
-Para leer la historia completa sobre nuestra motivación para crear dicho fichero por favor vi-
-sitad [este enlace web](http://www.ks7000.net.ve/2017/04/21/comandos-gnulinux-conocidos/).
+Para leer la historia completa sobre nuestra motivación para crear dicho fichero por favor visitad [este enlace web](http://www.ks7000.net.ve/2017/04/21/comandos-gnulinux-conocidos/).
 
 Según instrucciones en fichero **calendar.all** debemos hacer lo siguiente:
 
 * En nuestra carpeta personal debemos crear una carpeta oculta llamada "calendar".
 * Para ello en una ventana terminal tecleamos **"mkdir ~/.calendar"**.
 * Luego copiamos con el comando **sudo cp /usr/share/calendar.all ~/.calendar/calendar.all**.
-* Editamos nuestro archivo personal **nano ~/.calendar/calendar.all** (o vuestro editor favorito).
+* Editamos nuestro archivo personal (usad vuestro editor de texto favorito) **nano ~/.calendar/calendar.all**.
 * Agregamos la siguiente línea **#include <calendar.venezuela>**.
 * (opcional):borramos las líneas que especifican ciertos ficheros **calendar.*** _que no nos interesan_.
 * Guardamos y salimos del editor de texto.
@@ -106,20 +100,13 @@ Si seguimos estas instrucciones el comando **calendar** funcionará solo para el
 
 ## Instrucciones de instalación a nivel de partición.
 
-Se deben seguir los mismos pasos que a nivel de usuario **pero en este caso usaremos -con derechos
-de administrador "root"- a la carpeta /etc/calendar/**. La ventaja de este  método es que podremos
-elevar de versión la distro que tengamos instalada o instalamos otra distro (suponiendo que tenga-
-mos la carpeta /etc en una partición distinta o la tengamos respaldada en otro dispositivo)CONSER-
-VANDO LA CONFIGURACIÓN QUE HAGAMOS.
+Se deben seguir los mismos pasos que a nivel de usuario **pero en este caso usaremos -con derechos de administrador "root"- a la carpeta /etc/calendar/**. La ventaja de este  método es que podremos elevar de versión la distro que tengamos instalada o instalamos otra distro (suponiendo que tengamos la carpeta /etc en una partición distinta o la tengamos respaldada en otro dispositivo) CONSERVANDO LA CONFIGURACIÓN QUE HAGAMOS.
 
-La desventaja de este método es que se modifica para todos los usuarios en un mismo ordenador.
+La "desventaja" de este método es que se modifica para todos los usuarios en un mismo ordenador.
 
 ## Instrucciones de instalación a nivel de sistema operativo.
 
-Con derechos de  administrador "root" modificamos  el fichero **/usr/share/calendar/calendar.all**
-agregando la línea **#include <calendar.venezuela>** y copiando el fichero **calendar.venezuela** a
-la carpeta **usr/share/calendar/**. La desventaja de este método es que se modifica para todos los
-usuarios en un mismo ordenador.
+Con derechos de  administrador "root" modificamos  el fichero **/usr/share/calendar/calendar.all** agregando la línea **#include <calendar.venezuela>** y copiando el fichero **calendar.venezuela** a la carpeta **usr/share/calendar/**. La "desventaja" de este método es que se modifica para todos los usuarios en un mismo ordenador.
 
 ## Para mayor información (en inglés):
 * [bsdmainutils package at Debian](http://metadata.ftp-master.debian.org/changelogs/main/b/bsdmainutils/bsdmainutils_9.0.12+nmu1_copyright).
